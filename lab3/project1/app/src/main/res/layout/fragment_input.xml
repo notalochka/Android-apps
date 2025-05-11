@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вибір посуду"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тип посуду:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerDishes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Виробник:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxBrand1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tefal"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxBrand2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fissman"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxBrand3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tescoma"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Діапазон цін:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="до 500 грн"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500-1000 грн"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="понад 1000 грн"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</ScrollView>
