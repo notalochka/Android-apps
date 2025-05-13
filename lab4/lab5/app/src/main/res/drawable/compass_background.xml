@@ -1,0 +1,145 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+
+    <group
+        android:name="compass_base"
+        android:pivotX="150"
+        android:pivotY="150">
+
+        <path
+            android:name="compass_circle"
+            android:fillColor="#E3F2FD"
+            android:strokeColor="#1976D2"
+            android:strokeWidth="2"
+            android:pathData="M150,10 a140,140 0 1,1 -0.1,280 a140,140 0 1,1 0.1,-280"/>
+
+        <path
+            android:name="center_circle"
+            android:fillColor="#1976D2"
+            android:pathData="M150,140 a10,10 0 1,1 -0.1,20 a10,10 0 1,1 0.1,-20"/>
+
+        <path
+            android:name="main_lines"
+            android:strokeColor="#1976D2"
+            android:strokeWidth="3"
+            android:pathData="M150,10 L150,40 M150,260 L150,290 M10,150 L40,150 M260,150 L290,150"/>
+
+        <path
+            android:name="secondary_lines"
+            android:strokeColor="#1976D2"
+            android:strokeWidth="1"
+            android:pathData="M150,50 L150,70 M150,230 L150,250 M50,150 L70,150 M230,150 L250,150"/>
+
+        <path
+            android:name="north_arrow"
+            android:fillColor="#D32F2F"
+            android:pathData="M145,20 L150,5 L155,20 Z"/>
+
+        <group
+            android:name="north_text"
+            android:translateY="-110">
+            <path
+                android:fillColor="#D32F2F"
+                android:pathData="M-5,-20 L0,-30 L5,-20 Z"/>
+            <text
+                android:text="N"
+                android:textSize="24sp"
+                android:textColor="#D32F2F"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-medium"
+                android:translateX="-10"
+                android:translateY="-50"/>
+        </group>
+
+        <group
+            android:name="east_text"
+            android:translateX="110">
+            <path
+                android:fillColor="#D32F2F"
+                android:pathData="M20,-5 L30,0 L20,5 Z"/>
+            <text
+                android:text="E"
+                android:textSize="24sp"
+                android:textColor="#D32F2F"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-medium"
+                android:translateX="-10"
+                android:translateY="15"/>
+        </group>
+
+        <group
+            android:name="south_text"
+            android:translateY="110">
+            <path
+                android:fillColor="#D32F2F"
+                android:pathData="M-5,20 L0,30 L5,20 Z"/>
+            <text
+                android:text="S"
+                android:textSize="24sp"
+                android:textColor="#D32F2F"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-medium"
+                android:translateX="-10"
+                android:translateY="50"/>
+        </group>
+
+        <group
+            android:name="west_text"
+            android:translateX="-110">
+            <path
+                android:fillColor="#D32F2F"
+                android:pathData="M-20,-5 L-30,0 L-20,5 Z"/>
+            <text
+                android:text="W"
+                android:textSize="24sp"
+                android:textColor="#D32F2F"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-medium"
+                android:translateX="-10"
+                android:translateY="15"/>
+        </group>
+
+        <text
+            android:name="ne_text"
+            android:text="NE"
+            android:textSize="18sp"
+            android:textColor="#1976D2"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium"
+            android:translateX="80"
+            android:translateY="-80"/>
+
+        <text
+            android:name="se_text"
+            android:text="SE"
+            android:textSize="18sp"
+            android:textColor="#1976D2"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium"
+            android:translateX="80"
+            android:translateY="80"/>
+
+        <text
+            android:name="sw_text"
+            android:text="SW"
+            android:textSize="18sp"
+            android:textColor="#1976D2"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium"
+            android:translateX="-80"
+            android:translateY="80"/>
+
+        <text
+            android:name="nw_text"
+            android:text="NW"
+            android:textSize="18sp"
+            android:textColor="#1976D2"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium"
+            android:translateX="-80"
+            android:translateY="-80"/>
+    </group>
+</vector>
